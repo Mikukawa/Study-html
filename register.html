@@ -96,20 +96,24 @@
             background-color: #357abd;
         }
         
-        .your-button-class  {
-             width: 100%;
+        .your-button-class {
+            display: block;
+            width: 100%;
             padding: 14px;
-            background-color: #4a90e2;
-            border: none;
+            background: #4a90e2;
             border-radius: 8px;
             color: white;
+            text-decoration: none;
+            text-align: center;
             font-size: 16px;
             font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-top: 10px;
+        }
+
+        .your-button-class:hover,
+        .your-button-class:visited,
+        .your-button-class:active {
+            color: white;
             text-decoration: none;
-            display: block;
         }
 
         .login-link {
@@ -138,7 +142,7 @@
             <p>กรอกข้อมูลด้านล่างเพื่อเริ่มใช้งานระบบ</p>
         </div>
 
-        <form action="#" method="POST">
+        <form action="register.php" method="POST">
             <div class="form-group">
                 <label for="username">ชื่อผู้ใช้ (Username)</label>
                 <input type="text" id="username" name="username" placeholder="ตั้งชื่อผู้ใช้ของคุณ" required>
@@ -162,9 +166,7 @@
             <button type="submit" class="btn-register">สมัครสมาชิก</button>
         </form>
 
-        <button class="your-button-class">
-            <a href="index.html">ย้อนกลับ</a>
-        </button>
+        <a href="index.html" class="your-button-class">ย้อนกลับ</a>
 
         <div class="login-link">
             มีบัญชีอยู่แล้วใช่ไหม? <a href="#">เข้าสู่ระบบที่นี่</a>

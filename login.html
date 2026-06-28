@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#eef1ff;
+}
+
+.login-container{
+    width:400px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.login-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.login-title h1{
+    color:#111827;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.login-title p{
+    color:#64748b;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+    color:#374151;
+}
+
+.form-group input{
+    width:100%;
+    padding:14px;
+    border:1px solid #dbe3f0;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.form-group input:focus{
+    border-color:#5b54f5;
+    box-shadow:0 0 0 4px rgba(91,84,245,.15);
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:50px;
+    background:#5b54f5;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(91,84,245,.3);
+}
+
+.register-link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.register-link a{
+    text-decoration:none;
+    color:#5b54f5;
+    font-weight:600;
+}
+
+
+</style>
+
+</head>
+    <body>
+        <div class="login-container">
+
+        <div class="login-title">
+            <h1>Login</h1>
+            <p>เข้าสู่ระบบเพื่อใช้งานเว็บไซต์</p>
+        </div>
+
+        <form action="login.php" method="POST">
+
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text"
+                        name="username"
+                        placeholder="กรอก Username"
+                        required>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password"
+                        name="password"
+                        placeholder="กรอกรหัสผ่าน"
+                        required>
+            </div>
+
+                <button type="submit" class="login-btn">
+                    เข้าสู่ระบบ
+                </button>
+
+        </form>
+
+        <div class="register-link">
+            ยังไม่มีบัญชี?
+            <a href="register.html">สมัครสมาชิก</a>
+        </div>
+    </div>
+
+</body>
+</html>
